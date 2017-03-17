@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+/*border-radius 用来产生圆角，比如画一个圆形s*/
+.box1{
+    width:100px;
+    height:100px;
+    background:red;
+    border-radius:100px; //border-radius:100%;
+}
+.box2{
+	width: 100px;
+    height: 50px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+	}
+.box3{
+	width: 100px;
+    height: 50px;
+    background: red;
+    border-radius: 50px/25px;
+	}
+.box4{
+	width: 100px;
+    height: 50px;
+    background: red;
+    border-radius: 100% 0 0 100% /50%;
+	}
+</style>
+</head>
+
+<body>
+<!---------border-radius 用来产生圆角，比如画一个圆形---------->
+<div class="box1"></div>
+<hr/>
+
+<!-----我们来看看它的语法：border-radius: [左上] [右上] [右下] [左下]，来画一个半圆----->
+<div class="box2"></div>
+<hr/>
+
+<!-----如何画一个椭圆？ 其实border-radius的值还有一种语法: x半径/y半径----->
+<div class="box3"></div>
+<hr/>
+
+<!-----如果我要画半个椭圆，又要咋办呢？----->
+<div class="box4"></div>
+
+
+</body>
+</html>
